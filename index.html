@@ -39,6 +39,11 @@
 		<div class="grados">
 		&deg;C
 		</div>
+		<div>
+			<button>
+				+
+			</button>
+		</div>
 	</div>
 	<div style="clear: both;"></div>
 	<div class="eco">
@@ -48,16 +53,34 @@
 	</div>
 	<script src="electro.js"></script>
 	<script>
+		var tempfrigo=5;
+		var tempcong=-5;
+		var frigoencendido=true;
+		var congencendido=true;
 		function cambioHora (hora) {
 			document.getElementById("hora").innerHTML = hora.getHours() + ":" + hora.getMinutes() + ":" + hora.getSeconds();
 		}
 		
 		function cambioTempFrigo(temp){
 			document.getElementById("tempFrigo").innerHTML = Math.round(temp);
+				if(temp>tempfrigo && frigoencendido==true){
+					electro.motorFrigorifico(true);
+				}
+				else{
+					electro.motorFrigorifico(false);
+				}
 		}
+
 		function cambioTempCong(temp){
 			document.getElementById("tempCong").innerHTML = Math.round (temp);
+				if(temp>tempcong && congencendido==true){
+						electro.motorCongelador(true);
+					}
+					else{
+						electro.motorCongelador(false);
+					}
 		}
+		
 		function subirfrigo(){
 		tempfrigorifico++;
 		}
