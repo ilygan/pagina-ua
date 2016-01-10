@@ -80,6 +80,16 @@ html,body{
 	height:25px;
 }
 
+.encender{
+	clear: both;
+}
+
+.encender1{
+	margin-left: 35px;
+	margin-top: 60px;
+	width: 65px;
+}
+
 button{
 	background-color: black;
 	border: 0px;

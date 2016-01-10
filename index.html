@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<title>Nevera</title>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
@@ -41,6 +41,11 @@
 				-
 			</button>
 		</div>
+		<div class="encender">
+			<button class="encender1" onclick="apagarfrigo()">
+				ON/OFF
+			</button>
+		</div>
 	</div>
 	<div class="col">
 		<div>Congelador</div>
@@ -59,6 +64,11 @@
 				-
 			</button>
 		</div>
+		<div class="encender">
+			<button class="encender1" onclick="apagarcong()">
+				ON/OFF
+			</button>
+		</div>
 	</div>
 	<div style="clear: both;"></div>
 	<div class="eco">
@@ -66,10 +76,13 @@
 			<img src="icono-reciclable.png" class="eco2">
 		</button>
 	</div>
+	
+
+	
 	<script src="electro.js"></script>
 	<script>
 		var tempfrigo=5;
-		var tempcong=-5;
+		var tempcong=-16;
 		var frigoencendido=true;
 		var congencendido=true;
 		function cambioHora (hora) {
@@ -97,25 +110,35 @@
 		}
 		
 		function subirfrigo(){
-		tempfrigorifico++;
+		tempfrigo++;
 		}
 		function bajarfrigo(){
-		tempfrigorifico--;
+		tempfrigo--;	
 		}
 		function subircong(){
-		tempcongelador++;
+		tempcong++;
 		}
 		function bajarcong(){
-		tempcongelador--;
+		tempcong	--;
 		}
 		
 		function apagarfrigo(){
 			if(frigoencendido=true){
 				frigoencendido=false;
-				document.getElementById(frigo1)
+				electro.motorFrigorifico(false);
 			}
 			else{
 				frigoencendido=true;
+			}
+		}
+		
+		function apagarcong(){
+			if(congencendido=true){
+				congencendido=false;
+				electro.motorFrigorifico(false);
+			}
+			else{
+				congencendido=true;
 			}
 		}
 		
