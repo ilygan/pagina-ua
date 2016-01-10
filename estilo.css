@@ -12,6 +12,22 @@ html,body{
 	font-family:Arial, Helvetica, sans-serif;
 }
 
+.tempfrigo{
+
+	margin-left: 25px;
+	margin-top:30px;
+	display: block;
+	font-size: 90px;
+}
+
+.tempcong{
+
+	margin-left: 40px;
+	margin-top:30px;
+	display: block;
+	font-size: 90px;
+}
+
 .col2{
 	width:50%;
 	float: left;
@@ -159,8 +175,4 @@ ul, ol {
 		width:100%;
 	}
 	
-	.tempfrigo{
-		padding-top: 200px;
-		display: block;
-	}
 }
