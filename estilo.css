@@ -76,7 +76,7 @@ ul, ol {
 		right:20px;	
 	}
 	
-	.nav<li{
-		clear: both;
+	.nav li:hover > ul {
+		display:block;
 	}
 }
