@@ -27,14 +27,12 @@ html,body{
 }
 
 #header {
-	position: relative;	
 	font-family:Arial, Helvetica, sans-serif;
 }
 
 .nav{
 	top:25px;
 	left:15px;
-	position:absolute;
 }
 
 ul, ol {
