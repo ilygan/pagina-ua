@@ -30,8 +30,8 @@
 		</div>
 	</div>
 	<div class="col">
-		Congelador	
-		<div id="tempcong">
+		Congelador
+		<div id="tempCong">
 		
 		</div>
 	</div>
@@ -49,9 +49,13 @@
 		function cambioTempFrigo(temp){
 			document.getElementById("tempFrigo").innerHTML = Math.round(temp*100)/100;
 		}
+		function cambioTempCong(temp){
+			document.getElementById("tempCong").innerHTML = Math.round(temp*100)/100;
+		}
 		
 		electro.hora(cambioHora);
 		electro.tempFrigorifico(cambioTempFrigo);
+		electro.tempCongelador(cambioTempCong);
 	</script>
 </body>
 </html>
