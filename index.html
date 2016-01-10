@@ -6,7 +6,7 @@
 </head>
 <body>
 	<img src="puerta.png" class="puerta">
-	<div class="hora"></div>	
+	<div class="hora" id="hora"></div>	
 	<div id="header">
 		<ul class="nav">
 			<li>
@@ -21,6 +21,7 @@
 			</li>
 		</ul>
 	</div>
+	<script src="electro.js"></script>
 	<script>
 		function cambioHora (hora) {
 			document.getElementById("hora").innerHTML = hora.getHours() + ":" + hora.getMinutes() + ":" + hora.getSeconds();
@@ -29,6 +30,5 @@
 		}
 		electro.hora(cambioHora);
 	</script>
-	<script src="electro.js"></script>
 </body>
 </html>
