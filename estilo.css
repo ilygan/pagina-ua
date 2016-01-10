@@ -12,6 +12,10 @@ html,body{
 	font-family:Arial, Helvetica, sans-serif;
 }
 
+.grados{
+	position: relative;
+	float: left;
+}
 .tempfrigo{
 
 	margin-left: 25px;

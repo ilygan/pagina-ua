@@ -56,6 +56,28 @@
 		function cambioTempCong(temp){
 			document.getElementById("tempCong").innerHTML = Math.round (temp);
 		}
+		function subirfrigo(){
+		tempfrigorífico++;
+		}
+		function bajarfrigo(){
+		tempfrigorífico--;
+		}
+		function subircong(){
+		tempcongelador++;
+		}
+		function bajarcong(){
+		tempcongelador--;
+		}
+		
+		function apagarfrigo(){
+			if(frigoencendido=true){
+				frigoencendido=false;
+				document.getElementById(frigo1)
+			}
+			else{
+				frigoencendido=true;
+			}
+		}
 		
 		electro.hora(cambioHora);
 		electro.tempFrigorifico(cambioTempFrigo);
