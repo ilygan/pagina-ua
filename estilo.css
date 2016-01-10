@@ -30,7 +30,7 @@ html,body{
 
 .tempcong{
 
-	margin-left: 40px;
+	margin-left: 20px;
 	margin-top:30px;
 	display: block;
 	font-size: 90px;
@@ -56,12 +56,35 @@ html,body{
 	width: 100%;
 }
 
+.mas{
+	float:left;
+	margin-top:10px;
+	margin-left:10px;
+}
+
+.mas2{
+	font-size: 20px;
+	width:45px;
+	height:25px;
+}
+
+.menos{
+	margin-top:10px;
+	float: left;
+	margin-left:30px;
+}
+
+.menos2{
+	font-size: 20px;
+	width:45px;
+	height:25px;
+}
+
 button{
 	background-color: black;
 	border: 0px;
 	width: 10%;
 	color: white;
-	clear: both;
 }
 
 .eco{
